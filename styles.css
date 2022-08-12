@@ -1,0 +1,111 @@
+nav{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  box-shadow: 0 0 10px #000;
+  background-color: rgb(252, 249, 249);
+  font-size: 12px;
+
+}
+
+nav .header_title{
+  flex: 1;
+  color: rgb(2, 37, 18);
+  text-shadow: 0 0 2px #000;
+  margin-left: 50px;
+
+}
+
+nav ul{
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+nav ul li{
+  list-style: none;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: rgb(2, 37, 18);
+  font-size: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+
+nav ul li a:hover{
+  border-bottom: 2px solid cadetblue;
+}
+
+nav .menu{
+  font-size: 2.5em;
+  display: none;
+}
+
+header.main_header {
+  text-align: center;
+  color: white;
+  background-color: black;
+  *background:linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.1)), url("/img/boston.jpg");
+  *background:linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.1)), url("/img/acorn_street_small.jpg");
+  *background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url("/img/acorn_street_small.jpg");
+  background:linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.1)), url("/img/back_bay_small.jpg");
+  background-repeat: no-repeat;
+  *background-attachment: scroll;
+  background-attachment: fixed;
+  background-position: left center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#profile_picture_div {
+  padding-bottom: 32px;
+}
+
+#profile_picture {
+  border: 8px solid white;
+}
+
+#site_update {
+  margin-top: 48px;
+  padding-bottom: 48px;
+  font-size: 18pt;
+  text-shadow: 3px 3px 30px #000000, 3px 3px 30px #000000;
+}
+
+#about_section {
+  background:#edeeef;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+}
+
+.profile_img {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+#headshot_img {
+  border:8px solid white;
+  width:350px!important;
+  height:100%;
+}
+
+.img-circle {
+  margin: auto;
+  border-radius: 50%;
+}
+
+#about_desc {
+  margin-bottom: 1rem;
+  margin-top:1rem;
+  padding-left: 2.25rem;
+}

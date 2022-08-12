@@ -2,9 +2,164 @@
 <html>
   <head>
     <title>Zach Kaufman Portfolio</title>
+    <meta name="keyword" content="Zach Kaufman", "portfolio", "student", "responsive">
+    <meta name="description" content="Portfolio website for Zach Kaufman">
+    <meta name="viewport" content="initial-scale=1" charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.css">
   </head>
+  <!-- main body for html website -->
   <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
-    </body>
+    <!-- Creates a responsive menu for mobile and desktop users -->
+    <nav>
+      <div class="header_title">
+        <h1 style="font-size: 20px;">Zach Kaufman's Portfolio</h1>
+      </div>
+      <ul>
+        <li>
+          <a href ="#">Home</a>
+        </li>
+        <li>
+          <a href ="#">About</a>
+        </li>
+        <li>
+          <a href="#">Experience</a>
+        </li>
+        <li>
+          <a href="#">Projects</a>
+        </li>
+        <li>
+          <a href=#>Contact</a>
+        </li>
+      </ul>
+      <div class="menu">
+        <label for="header">
+          <i id="bar" class="social social-bars"></i>
+        </label>
+      </div>
+    </nav>
+    <!-- top header of website -->
+    <header class="main_header d-flex" style="padding-bottom: 100px; padding-top: 20px">
+
+      <!-- user photo and job/school title -->
+      <div class="main_div container text-center my-auto" id="intro_div">
+        <div class="mb-5" id="site_update">
+          This site is
+          <u class="text-secondary">up-to-date</u>
+          as of August 2022
+        </div>
+        <!-- user photo -->
+        <div class="photo_div" id="profile_picture_div">
+          <img class="img-responsive img-circle" id="profile_picture">
+        </div>
+        <!--Name-->
+        <h1 class="mb-1" >Zach Kaufman</h1>
+        <!--Job/education title-->
+        <h3 class="mb-5">
+          <em>
+            Computer Science Bachelors - Northern Arizona University
+          </em>
+        </h3>
+      </div>
+    </header>
+    <!-- About Section -->
+    <section class="content-section" id="about_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-lg-4">
+            <div class="profile_img">
+              <img class="img-responsive img-circle" id="headshot_img">
+              <div>
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-8" id="about_desc">
+            <h4>Zach Kaufman</h4>
+            <p class="about_paragraph">
+              <b>NAU 23' School of Informatics, Computing, and Cyber Systems</b>
+            </p>
+            <p class="about_paragraph" id="about_desc_paragraph">
+              I will be graduate of NAU class of 2023 and my passion
+              has always been Computer Science
+              <br>
+              My interest include web and app development, artifical intelligence,
+              maching learning, the future of facial and voice recgonition
+            </p>
+            <!-- Spacer div -->
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <!-- Links to learn more about my projects-->
+      <div class="container">
+        <div classs="row">
+          <div class="col" id="links">
+            <h2> Learn More about Me: </h2>
+            <a class="button scroll_trigger about_buttons"> Skills </a>
+            <a class="button scroll_trigger about_buttons">Projects</a>
+            <a class="button scroll_trigger about_buttons"> Work Experience</a>
+            <a class="button about_buttons"> Resume</a>
+            <a class="button about_buttons"> Git Hub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skils Section -->
+    <section class="content" id="skills_section">
+      <div class="container">
+        <div class="content_header">
+          <h2 class="head_title">Skills:</h2>
+        </div>
+        <div class="container" id="skills_desc">
+          <p class="below_header
+          ">Below are the skills have learned over the last couple years</p>
+        </div>
+        <div class="row">
+          <div class="col skill_col">
+            <span class="icons">
+              <i class="java_icon"></i>
+            </span>
+            <h4><b>Java</b></h4>
+            <p class="skills_paragraph">
+              I have over 7 years of software development experinece in Java,
+              creating android apps, plugins and various other applications,
+              including a
+              <a data_toggle="modal" href="#">Habit Tracking App</a>
+              ,
+              <a data_toggle="modal" href="#">Chess</a>
+              ,
+              <a data_toggle="modal" href="#">Student Management System</a>
+              . These different applications show off some of my skills in
+              Java development.
+            </p>
+          </di
+
+          v>
+          <div class="col skill_col">
+            <span class="icons">
+              <i class="python_icon"></i>
+            </span>
+            <h4><b>Java</b></h4>
+            <p class="skills_paragraph">
+              Over the past " <b>4 years</b>", I've formed an extensive experience with
+              Python in my classwork, school projects, and personal projects.
+              Some of my projects in Python include my"
+              <a data_toggle="modal" href="#">TicTacToe with CPU AI</a>
+              ", "
+              <a data_toggle="modal" href="#">Voice Assistant with voice
+                recgonition</a>
+              ", "
+              <a data_toggle="modal" href="#">Sudoku Solver</a>
+              ", "
+              <a data_toggle="modal" href="#">Artifical intelligence Algorithms
+              Maze Solver</a>
+              ", and mainy more."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
 </html>
