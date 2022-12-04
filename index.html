@@ -5,51 +5,47 @@
     <meta name="keyword" content="Zach Kaufman", "portfolio", "student", "responsive">
     <meta name="description" content="Portfolio website for Zach Kaufman">
     <meta name="viewport" content="initial-scale=1" charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css"></linl>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </head>
   <!-- main body for html website -->
   <body>
     <!-- Creates a responsive menu for mobile and desktop users -->
-    <nav>
-      <div class="header_title">
-        <h1 style="font-size: 20px;">Zach Kaufman's Portfolio</h1>
-      </div>
-      <ul>
-        <li>
-          <a href ="#">Home</a>
-        </li>
-        <li>
-          <a href ="#">About</a>
-        </li>
-        <li>
-          <a href="#">Experience</a>
-        </li>
-        <li>
-          <a href="#">Projects</a>
-        </li>
-        <li>
-          <a href=#>Contact</a>
-        </li>
-      </ul>
-      <div class="menu">
-        <label for="header">
-          <i id="bar" class="social social-bars"></i>
-        </label>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark sticky-top" style="background-color:teal">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Zach Kaufman's Portfolio</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">About</a>
+            <a class="nav-item nav-link" href="#">Skills</a>
+            <a class="nav-item nav-link" href="#">Projects</a>
+            <a class="nav-item nav-link" href="#">Experience</a>
+            <a class="nav-item nav-link" href="#">Contact Me</a>
+          </div>
+        </div>
       </div>
     </nav>
     <!-- top header of website -->
-    <header class="main_header d-flex" style="padding-bottom: 100px; padding-top: 20px">
+    <header class="masthead d-flex" style="padding-bottom: 100px; padding-top: 100px">
 
       <!-- user photo and job/school title -->
-      <div class="main_div container text-center my-auto" id="intro_div">
-        <div class="mb-5" id="site_update">
+      <div class="container text-center my-auto" >
+        <div class="mb-5" style="margin-top:-48px; padding-bottom: 48px; font-size:18pt; text-shadow:3px 3px 30px #000000, 3px 3px 30px #000000;">
           This site is
           <u class="text-secondary">up-to-date</u>
           as of August 2022
         </div>
         <!-- user photo -->
-        <div class="photo_div" id="profile_picture_div">
+        <div style="padding-bottom: 32px" id="profile_picture_div">
           <img class="img-responsive img-circle" id="profile_picture">
         </div>
         <!--Name-->
@@ -61,7 +57,50 @@
           </em>
         </h3>
       </div>
+      <div class="overlay"></div>
     </header>
+    <!--Coding Languages-->
+    <section class="content-section" style="padding-top: 2rem; padding-bottom: 2rem"
+    id="about">
+      <aside class="codingLanguages">
+        <div class="row">
+          <div class="col-md-12" style="text-align: center;">
+            <a target="blank" class="logo-link">
+              <img class="center-block" src="assets/javaLogo.png" 
+              alt="Java Logo">
+            </a>
+            <a target="blank" class="logo-link">
+              <img class="center-block" src="assets/bootstrapLogo.png" 
+              alt="Bootstrap Logo">
+            </a>
+            <a target="blank" class="logo-link">
+              <img class="center-block" src="assets/CprogramLogo.png" 
+              alt="C Programming Logo">
+            </a>
+            <a target="blank" class="logo-link">
+              <img class="center-block" src="assets/javascriptLogo.png" 
+              alt="javascript Logo">
+            </a>
+            <a target="blank" class="logo-link">
+              <img class="center-block" src="assets/leafletLogo.png" 
+              alt="Leaflet Logo">
+            </a>
+            <a target="blank" class="logo-link">
+              <img class="center-block" src="assets/kotlinLogo.png" 
+              alt="Kotlin Logo">
+            </a>
+            <a target="blank" class="logo-link">
+              <img class="center-block" src="assets/pythonLogo.png" 
+              alt="Python Logo">
+            </a>
+            <a target="blank" class="logo-link">
+              <img class="center-block" src="assets/reactLogo.png" 
+              alt="React Logo">
+            </a>
+          </div>
+        </div>
+      </aside>
+    </section>
     <!-- About Section -->
     <section class="content-section" id="about_section">
       <div class="container">
@@ -74,33 +113,46 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-lg-8" id="about_desc">
-            <h4>Zach Kaufman</h4>
+          <div class="col-sm-12 col-lg-8" id="about_desc" style="margin-bottom: 1rem; margin-top:1rem">
+            <h4>ABOUT ME:</h4>
             <p class="about_paragraph">
-              <b>NAU 23' School of Informatics, Computing, and Cyber Systems</b>
+              <br>
+              <b>NAU 23' School of Informatics, Computing, and Cyber Systems:</b>
             </p>
             <p class="about_paragraph" id="about_desc_paragraph">
-              I will be graduate of NAU class of 2023 and my passion
-              has always been Computer Science
+              &ensp; I will be graduate of NAU class of 2023 and 
+              I have always been passionate about Computer Science. 
               <br>
-              My interest include web and app development, artifical intelligence,
-              maching learning, the future of facial and voice recgonition
+              &ensp; My interest include web and app development, artifical intelligence,
+              maching learning, computer vision, natural language processing
+              and the future of facial and voice recgonition. 
             </p>
+            <p class="about_paragraph" style="font-size: 15pt; margin-bottom:0px">
+              <b>Northern Arizona University (NAU)</b>
+            </p>
+            <ul style="padding-left:30px">
+              <li class="about_paragraph" style="font-size:13pt">
+                <b>Bachelor of Science in Computer Science</b>
+              </li>
+              <li class="about_paragraph" style="font-size: 13pt"> 
+                A.P. Computer Science
+              </li>
+            </ul>
             <!-- Spacer div -->
             <div></div>
           </div>
         </div>
       </div>
       <!-- Links to learn more about my projects-->
-      <div class="container">
+      <div class="container text-center" id="selectionContainer">
         <div classs="row">
-          <div class="col" id="links">
-            <h2> Learn More about Me: </h2>
-            <a class="button scroll_trigger about_buttons"> Skills </a>
-            <a class="button scroll_trigger about_buttons">Projects</a>
-            <a class="button scroll_trigger about_buttons"> Work Experience</a>
-            <a class="button about_buttons"> Resume</a>
-            <a class="button about_buttons"> Git Hub</a>
+          <div class="col-lg-10 mx-auto" id="links">
+            <h2 class="mb-4"> Learn More about Me: </h2>
+            <a class="btn btn-light btn-xl ml-2 mr-2 mb-3 js-scroll-trigger about-btn" href="#skills"> Skills </a>
+            <a class="btn btn-light btn-xl ml-2 mr-2 mb-3 js-scroll-trigger about-btn" href="#projects">Projects</a>
+            <a class="btn btn-light btn-xl ml-2 mr-2 mb-3 js-scroll-trigger about-btn" href="#experience"> Work Experience</a>
+            <a class="btn btn-dark btn-xl ml-2 mr-2 mb-3 js-scroll-trigger about-btn" href="#resume"> Resume</a>
+            <a class="btn btn-dark btn-xl ml-2 mr-2 mb-3 js-scroll-trigger about-btn" href="#github"> Git Hub</a>
           </div>
         </div>
       </div>
@@ -109,11 +161,12 @@
     <section class="content" id="skills_section">
       <div class="container">
         <div class="content_header">
-          <h2 class="head_title">Skills:</h2>
+          <center><h2 class="head_title">Skills:</h2></center>
         </div>
         <div class="container" id="skills_desc">
           <p class="below_header
-          ">Below are the skills have learned over the last couple years</p>
+          ">Below are the skills have learned over the last couple years, 
+          and I'm always learning new skills everyday.</p>
         </div>
         <div class="row">
           <div class="col skill_col">
@@ -122,11 +175,9 @@
             </span>
             <h4><b>Java</b></h4>
             <p class="skills_paragraph">
-              I have over 7 years of software development experinece in Java,
-              creating android apps, plugins and various other applications,
-              including a
-              <a data_toggle="modal" href="#">Habit Tracking App</a>
-              ,
+              I have over 7 years Java of software development experience throughout
+              my academic projects and work experience creating android apps, 
+              APIs and various other applications including a
               <a data_toggle="modal" href="#">Chess</a>
               ,
               <a data_toggle="modal" href="#">Student Management System</a>
@@ -140,7 +191,28 @@
             <span class="icons">
               <i class="python_icon"></i>
             </span>
-            <h4><b>Java</b></h4>
+            <h4><b>Python</b></h4>
+            <p class="skills_paragraph">
+              Over the past " <b>4 years</b>", I've formed an extensive experience with
+              Python in my classwork, school projects, and personal projects.
+              Some of my projects in Python include my"
+              <a data_toggle="modal" href="#">TicTacToe with CPU AI</a>
+              ", "
+              <a data_toggle="modal" href="#">Voice Assistant with voice
+                recgonition</a>
+              ", "
+              <a data_toggle="modal" href="#">Sudoku Solver</a>
+              ", "
+              <a data_toggle="modal" href="#">Artifical intelligence Algorithms
+              Maze Solver</a>
+              ", and mainy more."
+            </p>
+          </div>
+          <div class="col skill_col">
+            <span class="icons">
+              <i class="python_icon"></i>
+            </span>
+            <h4><b>C</b></h4>
             <p class="skills_paragraph">
               Over the past " <b>4 years</b>", I've formed an extensive experience with
               Python in my classwork, school projects, and personal projects.
