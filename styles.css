@@ -34,6 +34,16 @@
   font-weight: 700!important;
 }
 
+.img-circle {
+  margin: auto;
+  border-radius: 25%;
+}
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 
 
@@ -91,3 +101,119 @@ header.masthead {
 }
 
 
+.about_paragraph{
+  font-family: 'Times New Roman', Times, serif!important;
+  font-size: larger;
+}
+
+.active{
+  color:darkviolet!important;
+}
+
+section{
+  padding: 100px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+.content-section-heading h2 {
+  font-size: 3rem;
+}
+.mb-2, .my-2 {
+  margin-bottom: .5rem!important;
+}
+
+h2{
+  font-weight: 700!important;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+::selection {
+  background: #fcbc1d;
+  text-shadow: none;
+}
+
+body {
+  font-family: 'Source Sans Pro';
+}
+
+address, article, aside, div, footer, header, hgroup, layer, main, nav, section {
+  display: block;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.icons {
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  line-height: 7.5rem;
+  font-size: 2.25rem;
+}
+
+.text-secondary {
+  color:black!important;
+}
+
+.projectSkills {
+  color:greenyellow!important;
+  margin: 0;
+  padding: 0;
+  white-space:nowrap;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none!important;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects!important;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  white-space: normal;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.react {
+  height: 8rem!important;
+  width: 13rem!important;
+  display: block;
+  line-height: 7.5rem;
+  font-size: 2.25rem;
+}

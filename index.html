@@ -8,29 +8,60 @@
     <link rel="stylesheet" href="styles.css"></linl>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </head>
   <!-- main body for html website -->
   <body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/bootstrap-5.2.0-dist/js/javascrip.js"></script>
     <!-- Creates a responsive menu for mobile and desktop users -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark sticky-top" style="background-color:teal">
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:teal">
       <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1">Zach Kaufman's Portfolio</span>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a href="#" class="navbar-brand js-scroll-trigger mb-0 h1" onclick="scrollTopAnimated()">Zach Kaufman's Portfolio</a>
+        <button class="navbar-toggler" 
+        type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">About</a>
-            <a class="nav-item nav-link" href="#">Skills</a>
-            <a class="nav-item nav-link" href="#">Projects</a>
-            <a class="nav-item nav-link" href="#">Experience</a>
-            <a class="nav-item nav-link" href="#">Contact Me</a>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto head">
+            <li class="nav-item">
+              <a onclick="scroll_to_anchor('about'); add_active_tag('aboutButton');" class="sliding-link navbar-brand active nav-link aboutButton" href="#about"
+              style="font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif!important; font-size: medium;">
+                ABOUT
+              </a>
+            </li>
+            <li class="nav-item">
+              <a onclick="scroll_to_anchor('skills'); add_active_tag('skillsButton');" class="sliding-link navbar-brand nav-link skillsButton" href="#skills" 
+              style="font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif!important; font-size: medium;">
+                SKILLS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a onclick="scroll_to_anchor('projects'); add_active_tag('projectsButton');" class="projectsButton sliding-link navbar-brand nav-link" href="#projects"
+              style="font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif!important; font-size: medium;">
+                PROJECTS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a onclick="scroll_to_anchor('experience'); add_active_tag('experienceButton');" class="experienceButton sliding-link navbar-brand nav-link" href="#experience"
+              style="font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif!important; font-size: medium;">
+                EXPERIENCE
+              </a>
+            </li>
+            <li class="nav-item">
+              <a onclick="scroll_to_anchor('contact'); add_active_tag('contactButton');" class="contactButton sliding-link navbar-brand nav-link" href="#contact"
+              style="font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif!important; font-size: medium;">
+                CONTACT ME
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -42,11 +73,12 @@
         <div class="mb-5" style="margin-top:-48px; padding-bottom: 48px; font-size:18pt; text-shadow:3px 3px 30px #000000, 3px 3px 30px #000000;">
           This site is
           <u class="text-secondary">up-to-date</u>
-          as of August 2022
+          as of December 2022
         </div>
         <!-- user photo -->
         <div style="padding-bottom: 32px" id="profile_picture_div">
-          <img class="img-responsive img-circle" id="profile_picture">
+          <img class="img-responsive img-circle" id="profile_picture" src="/assets/IMG_0004.JPG"
+          width="250" style="border:8px solid white">
         </div>
         <!--Name-->
         <h1 class="mb-1" >Zach Kaufman</h1>
@@ -60,8 +92,7 @@
       <div class="overlay"></div>
     </header>
     <!--Coding Languages-->
-    <section class="content-section" style="padding-top: 2rem; padding-bottom: 2rem"
-    id="about">
+    <section class="content-section" style="padding-top: 2rem; padding-bottom: 2rem" id="about">
       <aside class="codingLanguages">
         <div class="row">
           <div class="col-md-12" style="text-align: center;">
@@ -107,7 +138,8 @@
         <div class="row">
           <div class="col-sm-12 col-lg-4">
             <div class="profile_img">
-              <img class="img-responsive img-circle" id="headshot_img">
+              <img class="img-responsive img-circle" id="headshot_img" src="/assets/Northern_Arizona_Athletics_logo.svg.png" 
+              style="border:8px solid white; width: 350px!important; height:100%">
               <div>
                 <ul></ul>
               </div>
@@ -117,13 +149,13 @@
             <h4>ABOUT ME:</h4>
             <p class="about_paragraph">
               <br>
-              <b>NAU 23' School of Informatics, Computing, and Cyber Systems:</b>
+              <b>NAU 22' School of Informatics, Computing, and Cyber Systems:</b>
             </p>
-            <p class="about_paragraph" id="about_desc_paragraph">
-              &ensp; I will be graduate of NAU class of 2023 and 
-              I have always been passionate about Computer Science. 
+            <p class="about_paragraph" id="about_desc_paragraph" style="color:#808080;">
+              &emsp; I am a graduate of NAU class of 2022 and 
+              I have always been passionate about Computer Science since a young age. 
               <br>
-              &ensp; My interest include web and app development, artifical intelligence,
+              &emsp; My interest include web and app development, artifical intelligence,
               maching learning, computer vision, natural language processing
               and the future of facial and voice recgonition. 
             </p>
@@ -148,7 +180,7 @@
         <div classs="row">
           <div class="col-lg-10 mx-auto" id="links">
             <h2 class="mb-4"> Learn More about Me: </h2>
-            <a class="btn btn-light btn-xl ml-2 mr-2 mb-3 js-scroll-trigger about-btn" href="#skills"> Skills </a>
+            <a onclick="scroll_to_anchor('skills'); add_active_tag('skillsButton');" class="btn btn-light btn-xl ml-2 mr-2 mb-3 js-scroll-trigger about-btn" href="#skills"> Skills </a>
             <a class="btn btn-light btn-xl ml-2 mr-2 mb-3 js-scroll-trigger about-btn" href="#projects">Projects</a>
             <a class="btn btn-light btn-xl ml-2 mr-2 mb-3 js-scroll-trigger about-btn" href="#experience"> Work Experience</a>
             <a class="btn btn-dark btn-xl ml-2 mr-2 mb-3 js-scroll-trigger about-btn" href="#resume"> Resume</a>
@@ -157,77 +189,135 @@
         </div>
       </div>
     </section>
-    <!-- Skils Section -->
-    <section class="content" id="skills_section">
+    <!-- Skills Section -->
+    <section class="content bg-primary text-white text-center" id="skills">
       <div class="container">
-        <div class="content_header">
-          <center><h2 class="head_title">Skills:</h2></center>
+        <div class="content-section-heading">
+          <h2 class="head_title mb-2">Skills:</h2>
         </div>
-        <div class="container" id="skills_desc">
-          <p class="below_header
-          ">Below are the skills have learned over the last couple years, 
+        <div class="container text-center mb-5" id="skills_desc">
+          <p class="lead">Below are the skills have learned over the last couple years, 
           and I'm always learning new skills everyday.</p>
         </div>
-        <div class="row">
-          <div class="col skill_col">
-            <span class="icons">
-              <i class="java_icon"></i>
+        <div class="row" style="margin-bottom:48px">
+          <div class="col skill_col col-lg-4 col-md-6 mb-5">
+            <span class="icons rounded-circle mx-auto mb-3">
+              <img style="padding-top: 19px; padding-right: 5px;" class="img-responsive img-circle" src="/assets/javaLogo.png"></img>
             </span>
             <h4><b>Java</b></h4>
-            <p class="skills_paragraph">
+            <p class="text-faded mb-0" >
               I have over 7 years Java of software development experience throughout
               my academic projects and work experience creating android apps, 
               APIs and various other applications including a
-              <a data_toggle="modal" href="#">Chess</a>
+              <a class="projectSkills" target="blank" sytle="padding:0; margin:0"href="#">Chess</a>
               ,
-              <a data_toggle="modal" href="#">Student Management System</a>
+              <a class="projectSkills" data_toggle="modal" href="#">Student Management System</a>
               . These different applications show off some of my skills in
               Java development.
             </p>
-          </di
-
-          v>
-          <div class="col skill_col">
-            <span class="icons">
-              <i class="python_icon"></i>
+          </div>
+          <div class="col skill_col col-lg-4 col-md-6 mb-5">
+            <span class="icons rounded-circle mx-auto mb-3">
+              <img class="img-responsive img-circle" src="/assets/pythonLogo.png"
+              style="padding-top: 19px; padding-right: 5px;"></img>
             </span>
             <h4><b>Python</b></h4>
-            <p class="skills_paragraph">
-              Over the past " <b>4 years</b>", I've formed an extensive experience with
+            <p class="skills_paragraph text-faded mb-0">
+              Over the past <b>4 years</b>, I've formed an extensive experience with
               Python in my classwork, school projects, and personal projects.
-              Some of my projects in Python include my"
-              <a data_toggle="modal" href="#">TicTacToe with CPU AI</a>
-              ", "
-              <a data_toggle="modal" href="#">Voice Assistant with voice
+              Some of my projects in Python include my
+              <a class="projectSkills" data_toggle="modal" href="#">TicTacToe with CPU AI</a>
+              , 
+              <a class="projectSkills" data_toggle="modal" href="#">Voice Assistant with voice
                 recgonition</a>
-              ", "
-              <a data_toggle="modal" href="#">Sudoku Solver</a>
-              ", "
-              <a data_toggle="modal" href="#">Artifical intelligence Algorithms
+              , 
+              <a class="projectSkills" data_toggle="modal" href="#">Sudoku Solver</a>
+              , 
+              <a class="projectSkills" data_toggle="modal" href="#">Artifical intelligence Algorithms
               Maze Solver</a>
-              ", and mainy more."
+              , and mainy more.
             </p>
           </div>
-          <div class="col skill_col">
-            <span class="icons">
-              <i class="python_icon"></i>
+          <div class="col skill_col col-lg-4 col-md-6 mb-5">
+            <span class="icons rounded-circle mx-auto mb-3">
+              <img class="img-responsive img-circle" style="border-radius: 25%;"src="/assets/CprogramLogo.png"
+              style="padding-top: 19px; padding-right: 5px; margin-bottom: 200px;"></img>
             </span>
             <h4><b>C</b></h4>
-            <p class="skills_paragraph">
-              Over the past " <b>4 years</b>", I've formed an extensive experience with
-              Python in my classwork, school projects, and personal projects.
-              Some of my projects in Python include my"
-              <a data_toggle="modal" href="#">TicTacToe with CPU AI</a>
-              ", "
-              <a data_toggle="modal" href="#">Voice Assistant with voice
-                recgonition</a>
-              ", "
-              <a data_toggle="modal" href="#">Sudoku Solver</a>
-              ", "
-              <a data_toggle="modal" href="#">Artifical intelligence Algorithms
-              Maze Solver</a>
-              ", and mainy more."
+            <p class="text-faded mb-0">
+              Over the past <b>4 years</b>, I've learned a lot of new skills using
+              C programming in my classwork, school projects, and personal projects.
+              a project that shows off most of my C programming knowledge is my simulator 
+              project <a class="projectSkills" data_toggle="modal" href="#">Operating System Simulator</a>
+              I can unlock this project at a request of a employer.
             </p>
+          </div>
+          <div class="col skill_col col-lg-4 col-md-6 mb-5">
+            <span class="icons rounded-circle mx-auto mb-3">
+              <img class="img-responsive img-circle" src="/assets/javascriptLogo.png"
+              style="padding-top: 19px; padding-right: 5px; margin-bottom: 200px;"></img>
+            </span>
+            <h4><b>JavaScript, HTML, CSS</b></h4>
+            <p class="text-faded mb-0">
+              I have used HTML, JavaScript and CSS to develop many websites and
+              web applications for school projects including my capston project.
+              I have often develop full-stack applications, consisting of
+              HTML/JavaScript/CSS, various web libraries like leaflet.
+              I have used React and STAC cataloge backend used in my capstone project:
+              <a class="projectSkills" data_toggle="modal" href="#">
+                Planetary CartoCosmo for STAC for Planetary Mapping
+              </a>
+            </p>
+          </div>
+          <div class="col skill_col col-lg-4 col-md-6 mb-5">
+            <span class="icons rounded-circle mx-auto mb-3">
+              <img class="img-responsive img-circle react" src="/assets/reactLogo.png"
+              style="padding-top: 19px; padding-right: 5px;"></img>
+            </span>
+            <h4><b>React</b></h4>
+            <p class="text-faded mb-0">
+              I used React on my capstone project to develop a planetary map
+              capable of taking data from a USGS AST STAC catalog to display
+              GeoTIFF assets on a leaflet planetary map.
+            </p>
+          </div>
+          <div class="col skill_col col-lg-4 col-md-6 mb-5">
+            <span class="icons rounded-circle mx-auto mb-3">
+              <img class="img-responsive img-circle" src="/assets/bootstrapLogo.png"
+              style="padding-top: 19px; padding-right: 5px;"></img>
+            </span>
+            <h4><b>jQuery, Bootstrap</b></h4>
+            <p class="text-faded mb-0">
+              I have significant experience using web libraries such
+              as jQuery, and Bootstrap to create web applications for
+              many of my professional and personal projects. I used bootstrap
+              and jQuery to build this personal website and my capstone project
+              website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Personal Projects-->
+    <section class="content-section">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">
+            Personal Projects
+          </h3>
+          <h2 class="mb-2">
+            Portfolio
+          </h2>
+        </div>
+        <div class="container text-center mb-5">
+          <p class="lead">
+            Below are some of the projects I've done on my own
+            time or during my academic career at NAU.
+          </p>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-4">
+            <a href="" class="portfolio-item"></a>
           </div>
         </div>
       </div>
