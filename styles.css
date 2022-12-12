@@ -231,3 +231,18 @@ section#contact{
   -o-background-size: cover;
   background-size: cover;
 }
+
+section#contact .form-group textarea.form-control {
+  height: 248px;
+  }
+
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+
+.modal{
+  font-family: 'Source Sans Pro';
+  font-size: large;
+}
