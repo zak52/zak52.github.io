@@ -366,7 +366,7 @@
                   </a>
                 </div>
                 <div class="carousel-item ">
-                  <a href="#">
+                  <a data-bs-toggle="modal" data-bs-target="#simmulatorModal" href="#simmulatorModal">
                     <div class="d-flex justify-content-center">
                       <img src="/assets/simulatorAsset.jpg" 
                       class="img-fluid h-75 w-75" 
@@ -746,6 +746,57 @@
               <br><br>
               You can learn more about the project by clicking on the github
               button down below where it will take you to the github page</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary"
+            data-bs-dismiss="modal">Close</button>
+            <a href="https://github.com/zak52/Maze-Runner-Solver"><button type="button" class="btn btn-primary" >GitHub</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="simmulatorModal" tabindex="-1"
+    aria-labelledby="simulatorModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center fs-5" id="simulatorModalLabel"
+            style="margin: 0 auto;">
+              OS Simulator Project
+            </h5>
+            <button class="btn-close" type="button" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <p>
+              This is a simulation of a basic operating system, developed using C programming 
+              language. The project aims to demonstrate the functioning of an operating system 
+              and its various components, such as processes, memory management, and file system.
+
+              <h4> Features </h4>
+              <ul>
+                <li>
+                  Process management: The simulator includes a process scheduler that simulates the 
+                  execution of processes and implements various scheduling algorithms, such as FCFS 
+                  (First-Come-First-Serve), SJF (Shortest-Job-First), and Round-Robin.
+                </li>
+                <li>
+                  Memory management: The simulator includes a memory manager that simulates the 
+                  allocation and deallocation of memory to processes, using various allocation 
+                  strategies such as First-Fit, Best-Fit, and Worst-Fit.
+                </li>
+                <li>
+                  File system: The simulator includes a file system that simulates the creation, 
+                  deletion, and modification of files, as well as the allocation and deallocation of 
+                  disk blocks.
+                </li>
+              </ul>
+              <h4>Learn More:</h4>
+              <br>
+              You can learn more about the project by clicking on the github
+              button down below where it will take you to the github page. My old professor has
+              requested that this project stays private, please ask to have it unlocked.
+            </p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary"
